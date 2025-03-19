@@ -61,3 +61,10 @@
     color: var(--white);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: inherit;
+    top: inherit;
+  }
+}
