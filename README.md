@@ -1,5 +1,5 @@
 <div style="text-align: center">
-  <img src="./.github/react-icon.svg" style="max-width: 100px; width: 100%">
+  <img src="./.github/react-icon.svg" style="width: 100px">
   <h3>Formação em React - Cursando</h3>
 </div>
 
@@ -32,7 +32,7 @@ Todos os materiais aprendidos em aula, assim como todos desafios técnicos desen
 - Figma: [Download](01-fundamentos/figma/Ignite_Feed.fig)
 
 ### Projeto - Ignite Feed
-<img src="./.github/fundamentos//ignite-feed.png" style="max-width: 600px">
+<img src="./.github/fundamentos//ignite-feed.png" style="width: 600px">
 
 ### Desafio
 
