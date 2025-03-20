@@ -73,7 +73,7 @@ const posts: IPost[] = [
     publishedAt: new Date("2025-03-15 10:00:00"),
   },
   {
-    id: 2,
+    id: 3,
     author: {
       avatarUrl: "http://github.com/maykbrito.png",
       name: "Mayk Brito",
@@ -86,8 +86,7 @@ const posts: IPost[] = [
       },
       {
         type: "paragraph",
-        content:
-          "Saiu conteúdo novo no canal... Bora conferir?",
+        content: "Saiu conteúdo novo no canal... Bora conferir?",
       },
       {
         type: "link",
