@@ -38,7 +38,9 @@ export function Post({ author, content, publishedAt }: IPost) {
     setNewCommentText(event?.target.value);
   }
 
-  function handleNewCommentInvalid() {
+  function handleNewCommentInvalid(
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ) {
     event?.target.setCustomValidity("Esse campo é obrigatório.");
   }
 
@@ -100,7 +102,9 @@ export function Post({ author, content, publishedAt }: IPost) {
         />
 
         <footer>
-          <button type="submit" disabled={isNewCommentEmpty}>Publicar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publicar
+          </button>
         </footer>
       </form>
 
