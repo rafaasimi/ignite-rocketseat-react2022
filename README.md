@@ -32,9 +32,13 @@ Todos os materiais aprendidos em aula, assim como todos desafios técnicos desen
 - Figma: [Download](01-fundamentos/figma/Ignite_Feed.fig)
 
 ### Projeto - Ignite Feed
-<img src="./.github/fundamentos//ignite-feed.png" style="width: 600px">
+<img src="./.github/fundamentos/ignite-feed.png" style="width: 600px; border-radius: 8px">
 
-### Desafio
+### Desafio - Todo List
+<img src="./.github/fundamentos/todo-list.png" style="width: 600px; border-radius: 8px">
+
+Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasimi/desafio01-todolist-ignite-rocketseat-react2022). Ou baixe o figma [clicando aqui](01-fundamentos/figma/ToDo_List.fig).
+
 
 ## Aprofundando em Hooks
 
