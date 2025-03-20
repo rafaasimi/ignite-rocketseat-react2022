@@ -1,13 +1,25 @@
 import { format, formatDistanceToNow } from "date-fns";
 import { ptBR } from "date-fns/locale/pt-BR";
 
-import { IPost } from "../App";
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 import { useState } from "react";
 
-export function Post({ author, content, publishedAt }: IPost) {
+interface PostProps {
+  author: {
+    avatarUrl: string;
+    name: string;
+    role: string;
+  };
+  content: {
+    type: string;
+    content: string;
+  }[];
+  publishedAt: Date;
+}
+
+export function Post({ author, content, publishedAt }: PostProps) {
   const [comments, setComments] = useState(["Post muito bacana, heim?"]);
   const [newCommentText, setNewCommentText] = useState("");
 
@@ -24,7 +36,7 @@ export function Post({ author, content, publishedAt }: IPost) {
     addSuffix: true,
   });
 
-  function handleCreateNewComment(event: React.FormEvent<HTMLFormElement>) {
+  function handleCreateNewComment(event: React.FormEvent) {
     event?.preventDefault();
 
     setComments([...comments, newCommentText]);
@@ -39,7 +51,7 @@ export function Post({ author, content, publishedAt }: IPost) {
   }
 
   function handleNewCommentInvalid(
-    event: React.ChangeEvent<HTMLTextAreaElement>
+    event: React.InvalidEvent<HTMLTextAreaElement>
   ) {
     event?.target.setCustomValidity("Esse campo é obrigatório.");
   }

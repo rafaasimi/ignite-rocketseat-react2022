@@ -9,21 +9,7 @@ import styles from "./App.module.css";
 // publishedAt: Date
 // content: String
 
-export interface IPost {
-  id: number;
-  author: {
-    avatarUrl: string;
-    name: string;
-    role: string;
-  };
-  content: {
-    type: string;
-    content: string;
-  }[];
-  publishedAt: Date;
-}
-
-const posts: IPost[] = [
+const posts = [
   {
     id: 1,
     author: {
@@ -108,7 +94,6 @@ function App() {
             return (
               <Post
                 key={post.id}
-                id={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
