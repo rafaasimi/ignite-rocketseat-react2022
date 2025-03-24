@@ -19,6 +19,8 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
 
   background: ${(props) => props.theme.primary};
   color: ${(props) => props.theme.white};
+  border: none;
+  border-radius: 4px;
 
   /* ${(props) => {
     return css`
