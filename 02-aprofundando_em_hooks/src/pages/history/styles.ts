@@ -61,3 +61,44 @@ export const HistoryList = styled.div`
     }
   }
 `;
+
+// "as const" e uma forma de dizer para o TypeScript que o objeto acima
+// nao vai ter seus valores alterados, e que o tipo dele deve ser inferido
+// como um tipo literal com os valores exatos que estão nele.
+// Isso serve para que o TypeScript possa fazer uma checagem mais rigorosa
+// dos valores que estão sendo usados e evitar erros de digita o.
+const STATUS_COLORS = {
+  yellow: "yellow-500",
+  green: "green-500",
+  red: "red-500",
+} as const;
+
+
+interface StatusProps {
+  /**
+   * Cor do status, que pode ser um dos seguintes valores:
+   * - yellow
+   * - green
+   * - red
+   *
+   * Essa propriedade utiliza o tipo "keyof typeof STATUS_COLORS",
+   * que significa que o tipo dela eh a chave de um dos valores do objeto STATUS_COLORS.
+   * Isso serve para que o TypeScript possa fazer uma checagem mais rigorosa
+   * dos valores que estão sendo usados e evitar erros de digita-lo.
+   */
+  statusColor: keyof typeof STATUS_COLORS;
+}
+
+export const Status = styled.span<StatusProps>`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+  }
+`;
