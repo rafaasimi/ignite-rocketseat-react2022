@@ -21,27 +21,22 @@ const newCycleFormValidationSchema = zod.object({
     .max(60, "O intervalo precisa ser de no máximo 60 minutos."),
 });
 
+type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>;
+
 export function Home() {
-  // Form Controlled
-  // const [task, setTask] = useState("");
-
-  // Form Uncontrolled
-  // function handleSubmit(event: React.FormEvent<HTMLInputElement>) {
-  //   event?.preventDefault();
-  //   console.log(event.target.task.value);
-  // }
-
   function handleCreateNewCycle(data: unknown) {
     console.log(data);
   }
 
-  const { register, handleSubmit, watch, formState } = useForm({
+  const { register, handleSubmit, watch } = useForm<NewCycleFormData>({
     resolver: zodResolver(newCycleFormValidationSchema),
+    defaultValues: {
+      task: "",
+      minutesAmount: 0,
+    },
   });
   const task = watch("task");
   const isSubmitDisabled = !task;
-
-  console.log(formState.errors);
 
   return (
     <HomeContainer>
@@ -53,8 +48,6 @@ export function Home() {
             id="task"
             placeholder="Dê um nome para o seu projeto"
             list="task-suggestions"
-            // onChange={(event) => setTask(event?.target.value)}
-            // value={task}
             {...register("task")}
           />
 
@@ -70,7 +63,7 @@ export function Home() {
             id="minutesAmount"
             placeholder="00"
             min={5}
-            // max={60}
+            max={60}
             step={5}
             {...register("minutesAmount", { valueAsNumber: true })}
           />
