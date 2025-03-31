@@ -11,7 +11,7 @@ interface Cycle {
   minutesAmount: number;
   startDate: Date;
   interruptedDate?: Date;
-  finisedDate?: Date;
+  finishedDate?: Date;
 }
 
 interface CyclesContextType {
@@ -44,7 +44,7 @@ export function CyclesContextProvider({
     setCycles((state) =>
       state.map((cycle) => {
         if (cycle.id === activeCycleId) {
-          return { ...cycle, finisedDate: new Date() };
+          return { ...cycle, finishedDate: new Date() };
         } else {
           return cycle;
         }
