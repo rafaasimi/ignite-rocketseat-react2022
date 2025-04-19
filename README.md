@@ -54,10 +54,10 @@ Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasi
 ### Projeto - Ignite Timer
 <img src="./.github/aprofundando_em_hooks/ignite-timer.png" style="width: 600px; border-radius: 8px">
 
-### Desafio - Todo List
+### Desafio - Coffe Delivery
 <img src="./.github/aprofundando_em_hooks/coffe-delivery.png" style="width: 600px; border-radius: 8px">
 
-Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasimi/desafio02-coffedelivery-ignite-rocketseat-react2022). Ou baixe o figma [clicando aqui](02-aprofundando_em_hooks/figma/Coffe-Delivery.fig).
+Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasimi/desafio02-coffedelivery-ignite-rocketseat-react2022). Ou baixe o figma [clicando aqui](02-aprofundando_em_hooks/figma/Coffee-Delivery.fig).
 
 ## HTTP e Performance
 
