@@ -1,20 +1,84 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "description": "Desenvolvimento de site",
+      "id": 3,
+      "description": "Venda de curso online",
       "type": "income",
-      "category": "Venda",
-      "price": 6000,
-      "createdAt": "2025-04-20T13:51:38.017Z"
+      "category": "Educação",
+      "price": 1200,
+      "createdAt": "2025-04-18T10:00:00.000Z"
     },
     {
-      "id": 2,
-      "description": "Hamburguer",
+      "id": 4,
+      "description": "Café e pão de queijo",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 50,
-      "createdAt": "2025-04-19T13:51:38.017Z"
+      "price": 15,
+      "createdAt": "2025-04-18T08:30:00.000Z"
+    },
+    {
+      "id": 5,
+      "description": "Pagamento de freelancer",
+      "type": "income",
+      "category": "Serviços",
+      "price": 4500,
+      "createdAt": "2025-04-17T14:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "description": "Cinema com amigos",
+      "type": "outcome",
+      "category": "Lazer",
+      "price": 80,
+      "createdAt": "2025-04-16T20:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "description": "Consultoria empresarial",
+      "type": "income",
+      "category": "Negócios",
+      "price": 7000,
+      "createdAt": "2025-04-15T11:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "description": "Pizza delivery",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 60,
+      "createdAt": "2025-04-14T19:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "description": "Aula de dança",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 200,
+      "createdAt": "2025-04-13T16:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "description": "Venda de produtos artesanais",
+      "type": "income",
+      "category": "Artesanato",
+      "price": 350,
+      "createdAt": "2025-04-12T12:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "description": "Assinatura de streaming",
+      "type": "outcome",
+      "category": "Serviços",
+      "price": 40,
+      "createdAt": "2025-04-11T18:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "description": "Venda de fotografia",
+      "type": "income",
+      "category": "Arte",
+      "price": 500,
+      "createdAt": "2025-04-10T15:00:00.000Z"
     }
   ]
 }
