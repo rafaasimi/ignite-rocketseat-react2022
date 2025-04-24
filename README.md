@@ -67,10 +67,15 @@ Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasi
 - Requisições HTTP utilizando Fetch API e Axios
 - Criação de formulários utilizando React Hook Form
 - Melhorando a performance utilizando Context-Selector, useCallback, Memo e useMemo
-- Figma: [Download](02-aprofundando_em_hooks/figma/Ignite_Timer.fig)
+- Figma: [Download](03-http_e_performance/figma/DT_Money.fig)
 
 ### Projeto - DT Money
 <img src="./.github/http_e_performance/dt_money.png" style="width: 600px; border-radius: 8px">
+
+### Desafio - Github Blog
+<img src="./.github/http_e_performance/github_blog.png" style="width: 600px; border-radius: 8px">
+
+Para ir até o repositório do desafio, [clique aqui](https://github.com/rafaasimi/desafio03-githubblog-ignite-rocketseat-react2022). Ou baixe o figma [clicando aqui](03-http_e_performance/figma/GitHub_Blog.fig).
 
 ## Integrando Frontend - Backend
 
