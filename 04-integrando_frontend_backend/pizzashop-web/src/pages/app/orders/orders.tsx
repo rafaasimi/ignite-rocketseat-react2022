@@ -15,6 +15,7 @@ import { z } from 'zod'
 import { OrderTableSkeleton } from './order-table-skeleton'
 
 export function Orders() {
+  throw new Error('Not implemented')
   const [searchParams, setSeatchParams] = useSearchParams()
 
   const orderId = searchParams.get('orderId')
